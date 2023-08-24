@@ -19,6 +19,8 @@ export async function buscarPokemon(url) {
       nombre: pokemonParseado.name,
       tipos: pokemonParseado.types,
       imagen: pokemonParseado.sprites.other.dream_world.front_default,
+      weight: pokemonParseado.weight,
+      moves: pokemonParseado.moves[0].move.name,
     };
     // console.log(pokemonFormateado);
     arrayDePokemones.push(pokemonFormateado);
@@ -47,7 +49,3 @@ export async function buscarPokemonPorNombre(nombre) {
 // saludar();
 // buscarPokemon();
 // buscarPokemonPorNombre("charizard")
-
-export async function paginaSiguiente() {}
-
-export async function paginaAnterior() {}

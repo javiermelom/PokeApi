@@ -28,6 +28,8 @@ async function mostrarPokemones(url) {
       <span>${cadaPokemon.id}</span>
       <span>${cadaPokemon.tipos[0].type.name}</span>
       <img class="card-image" src='${cadaPokemon.imagen}'/>
+      <div>Pw ${cadaPokemon.moves}</div>
+      <div>Kg.${cadaPokemon.weight}</div>
     </div>`;
     // root.innerHTML += cardPokemon;//esta instruccion se ejecuto 20 veces que es el numero de cartas de pokemon que existen
     //para evitar que se ejecute 20 veces lo que hacemos es crear una variable llamada html vacia y vamos almacenando todos los pokemon
