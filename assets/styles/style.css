@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(191, 217, 247);
+}
+
+header {
+  margin-top: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: xx-large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+  margin-left: 43%;
+  border-color: 2px solid red;
+  color: yellow;
+  height: 80%;
+  width: 15%;
+  border-color: yellow;
+  border-style: double;
+  background-color: #282828;
+}
+
+.barraPokemon {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 15%;
+  margin-left: 18%;
+}
+
+.buscarPokemon {
+  border-radius: 12px;
+  width: 5%;
+  margin-right: 5%;
+  margin-left: 1%;
+  font-weight: bold;
+  background-color: rgb(145, 207, 236);
+}
+
+.esfera {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6%;
+}
+.esfera > img{
+  width: 6%;
+  height: 6%;
+  border-radius: 50%;
+  animation: rotate 5s linear infinite;
+  /* animation: rotate 5s perpendicular infinite; */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#root {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 8%;
+  height: 10%;
+  margin: 2px;
+  border-radius: 25px;
+  border: 5px solid black;
+  background: linear-gradient(to top, white 50%, red 50%);
+}
+
+.card-image {
+  height: 70px;
+  width: 70px;
+}
+
+.card:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  color: #282828;
+  font-weight: 500;
+  font-size: small;
+  border: 5px solid black;
+}
+
+.pagination {
+  margin-top: 10%;
+  gap: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  color: #282828;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
